@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1001350565899",
+    "project_id": "adhdone-a77dc",
+    "storage_bucket": "adhdone-a77dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001350565899:android:81d37d401eac932bf7370e",
+        "android_client_info": {
+          "package_name": "host.exp.exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001350565899-uashld12nbg7qonfhvtic2q7ql3ug959.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOJKj8DgfkrGTTpYean-61EAOWapOxwIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001350565899-uashld12nbg7qonfhvtic2q7ql3ug959.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1001350565899-gmfbqatrlsnooa23h9putf9du70jlldr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "host.exp.exponent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
