@@ -1,15 +1,24 @@
 import { View, Text } from 'react-native';
 import { Platform } from 'react-native';
-import React from 'react';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import BottomNav from '../components/BottomNav';
 import TopNavWeb from '../components/TopNavWeb';
 const CoachingScreen = () => {
+  const navigation = useNavigation();
 
   const renderPlatformSpecificContent = () => {
+    useLayoutEffect(() => {
+      navigation.setOptions({
+        headerShown: false
+      });
+    }, [navigation]);
+
     if (Platform.OS === 'web') {
         // Web-specific content
         return (
           <View style={{ flex: 1, backgroundColor: '#333333' }}>
+            <TopNavWeb />
           <Text className='font-extrabold color-white font-size-100'>Coaching and Advice yer maw</Text>
           <BottomNav />
         </View>

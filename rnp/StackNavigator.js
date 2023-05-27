@@ -10,6 +10,7 @@ import HabitScreen from './screens/HabitScreen';
 import CoachingScreen from './screens/CoachingScreen';
 import FinancialScreen from './screens/FinancialScreen';
 
+
 const AuthContext = createContext({});
 const Stack = createNativeStackNavigator()
 

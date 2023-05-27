@@ -32,6 +32,12 @@ const LoginScreen = () => {
     handleSignInWithGoogle();
   }, [response]);
 
+  useEffect(() => {
+    if (userInfo !== null) {
+      navigation.navigate('Home');
+    }
+  }, [userInfo, navigation]);
+
   useLayoutEffect(() => {
     navigation.setOptions({ headerShown: false });
   }, [navigation]);
@@ -78,8 +84,6 @@ const LoginScreen = () => {
 
   //   getUserFromAsyncStorage();
   // }, []);
-
-  userInfo !== null && navigation.navigate('Home');
 
   // console.log(user)
 

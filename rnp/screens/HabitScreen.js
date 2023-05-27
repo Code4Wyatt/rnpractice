@@ -1,7 +1,17 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import BottomNav from '../components/BottomNav'
+import TopNavWeb from '../components/TopNavWeb';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 const HabitScreen = () => {
+  const navigation = useNavigation()
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerShown: false
+    });
+  }, [navigation]);
+  
   return (
     <View style={{ flex: 1, backgroundColor: '#333333' }}>
       <Text>HabitScreen</Text>

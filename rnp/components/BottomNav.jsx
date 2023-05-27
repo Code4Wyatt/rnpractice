@@ -27,6 +27,7 @@ const BottomNav = () => {
         style={{
           flexDirection: 'row',
           width: '95%',
+          height: '70%',
           justifyContent: 'space-evenly',
           left: 10,
           borderRadius: 40,

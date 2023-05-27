@@ -8,6 +8,7 @@ import { StatusBar } from 'expo-status-bar';
 import BottomNav from '../components/BottomNav';
 import TopNavWeb from '../components/TopNavWeb';
 import Logo from '../assets/logo.png';
+import TopNavMobile from '../components/TopNavMobile';
 
 const HomeScreen = () => {
     const navigation = useNavigation()
@@ -104,7 +105,7 @@ const HomeScreen = () => {
 
             return (
                 <View style={{ flex: 1, backgroundColor: '#333333' }}>
-                    {/* <Image source={{uri: LogoImage}} /> */}
+                    <TopNavMobile />
                     <TouchableOpacity style={{ backgroundColor: '#FF7F50'}} onPress={async () => {
                             await AsyncStorage.removeItem('@user').then(() => navigation.navigate('Login'));
                         }}>
