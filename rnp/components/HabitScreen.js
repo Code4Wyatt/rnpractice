@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React, { useEffect, useLayoutEffect, useState } from 'react'
-import BottomNav from '../components/BottomNav'
-import TopNavWeb from '../components/TopNavWeb';
+import BottomNav from './BottomNav'
+import TopNavWeb from './TopNavWeb';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 const HabitScreen = () => {
   const navigation = useNavigation()

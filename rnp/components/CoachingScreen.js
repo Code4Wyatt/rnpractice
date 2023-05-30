@@ -2,8 +2,8 @@ import { View, Text } from 'react-native';
 import { Platform } from 'react-native';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import React, { useEffect, useLayoutEffect, useState } from 'react'
-import BottomNav from '../components/BottomNav';
-import TopNavWeb from '../components/TopNavWeb';
+import BottomNav from './BottomNav';
+import TopNavWeb from './TopNavWeb';
 const CoachingScreen = () => {
   const navigation = useNavigation();
 

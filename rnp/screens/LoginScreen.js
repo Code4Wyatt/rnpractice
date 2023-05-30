@@ -43,7 +43,7 @@ const LoginScreen = () => {
   }, [navigation]);
 
   const navigateToHome = () => {
-    navigation.navigate('Home');
+    navigation.navigate('Missions');
   }
 
   const getUserInfo = async (token) => {

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native'
+import React from 'react'
 
-const MissionList = ({ setSelectedMission }) => {
-    const [isSelected, setSelection] = useState(false);
+const MissionMilestones = ({currentMission, setSelectedMilestone}) => {
+
   return (
     <View style={{ padding: 10 }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
@@ -17,11 +17,9 @@ const MissionList = ({ setSelectedMission }) => {
             borderColor: '#00aced',
             borderWidth: 1
           }}
-          onPress={() => {
-            setSelectedMission('Renovate the house')
-          }}
+          onPress={() => setSelectedMilestone('Livingroom')}
         >
-          <Text style={{ color: 'white', marginRight: 10 }}>Renovate the house</Text>
+          <Text style={{ color: 'white', marginRight: 10 }}>Livingroom</Text>
         </TouchableOpacity>
 
         <View style={{ marginLeft: 50, width: 20, height: 20, borderWidth: 1, borderColor: 'black', borderRadius: 3 }} />
@@ -38,11 +36,9 @@ const MissionList = ({ setSelectedMission }) => {
             borderColor: '#00aced',
             borderWidth: 1
           }}
-          onPress={() => {
-            setSelectedMission('Create plan for start up')
-          }}
+
         >
-          <Text style={{ color: 'white', marginRight: 10 }}>Create plan for start up</Text>
+          <Text style={{ color: 'white', marginRight: 10 }}>Kids Room</Text>
         </TouchableOpacity>
 
         <View style={{ marginLeft: 50, width: 20, height: 20, borderWidth: 1, borderColor: 'black', borderRadius: 3 }} />
@@ -59,11 +55,9 @@ const MissionList = ({ setSelectedMission }) => {
             borderColor: '#00aced',
             borderWidth: 1
           }}
-          onPress={() => {
-            setSelectedMission('Organise holiday')
-          }}
+ 
         >
-          <Text style={{ color: 'white', marginRight: 10 }}>Organise holiday</Text>
+          <Text style={{ color: 'white', marginRight: 10 }}>Parents Room</Text>
         </TouchableOpacity>
 
         <View style={{ marginLeft: 50, width: 20, height: 20, borderWidth: 1, borderColor: 'black', borderRadius: 3 }} />
@@ -80,11 +74,8 @@ const MissionList = ({ setSelectedMission }) => {
             borderColor: '#00aced',
             borderWidth: 1
           }}
-          onPress={() => {
-            setSelectedMission('Write best man speech')
-          }}
         >
-          <Text style={{ color: 'white', marginRight: 10 }}>Write best man speech</Text>
+          <Text style={{ color: 'white', marginRight: 10 }}>Kitchen</Text>
         </TouchableOpacity>
 
         <View style={{ marginLeft: 50, width: 20, height: 20, borderWidth: 1, borderColor: 'black', borderRadius: 3 }} />
@@ -101,11 +92,9 @@ const MissionList = ({ setSelectedMission }) => {
             borderColor: '#00aced',
             borderWidth: 1
           }}
-          onPress={() => {
-            setSelectedMission('Complete motorbike license')
-          }}
+
         >
-          <Text style={{ color: 'white', marginRight: 10 }}>Complete motorbike license</Text>
+          <Text style={{ color: 'white', marginRight: 10 }}>Garden</Text>
         </TouchableOpacity>
 
         {/* <CheckBox
@@ -115,7 +104,7 @@ const MissionList = ({ setSelectedMission }) => {
         /> */}
       </View>
     </View>
-  );
-};
+  )
+}
 
-export default MissionList;
+export default MissionMilestones
