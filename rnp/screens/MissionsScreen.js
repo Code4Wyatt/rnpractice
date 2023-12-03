@@ -2,13 +2,13 @@ import { View, Text } from "react-native";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import { TouchableOpacity as TouchableOpacityWeb } from "react-native-web";
-import BottomNav from "./BottomNav";
-import TopNavWeb from "./TopNavWeb";
+import BottomNav from "../components/BottomNav";
+import TopNavWeb from "../components/TopNavWeb";
 import { Platform, TouchableOpacity, Image, StatusBar } from "react-native";
-import MissionList from "./MissionList";
-import TopNavMobile from "./TopNavMobile";
-import Mission from "./MissionScreen";
-import MissionMilestone from "./MissionMilestone";
+import MissionList from "../components/MissionList";
+import TopNavMobile from "../components/TopNavMobile";
+import Mission from "../components/MissionScreen";
+import MissionMilestone from "../components/MissionMilestone";
 
 const MissionsScreen = () => {
   const [currentOption, setCurrentOption] = useState(1);
@@ -74,10 +74,12 @@ const MissionsScreen = () => {
       // Mobile-specific content
 
       return (
+        
         <View style={{ flex: 1, backgroundColor: "#333333" }}>
           <View
             style={{
-              marginTop: 10,
+              marginTop: 20,
+              marginBottom: 10,
               marginLeft: 10,
               marginRight: 10,
               height: "17%",
@@ -95,6 +97,7 @@ const MissionsScreen = () => {
                 flex: 1,
                 justifyContent: "center",
                 alignItems: "center",
+                marginBottom: 10
               }}
             >
               <Text
@@ -102,7 +105,6 @@ const MissionsScreen = () => {
                   fontSize: 20,
                   fontWeight: "bold",
                   color: "white",
-                  marginBottom: 10,
                   textAlign: "center",
                 }}
               >
@@ -162,13 +164,6 @@ const MissionsScreen = () => {
                   padding: 10,
                 }}
               >
-                <View style={{ flex: 1 }}>
-                  <Text
-                    style={{ fontSize: 18, fontWeight: "bold", color: "white" }}
-                  >
-                    Missions
-                  </Text>
-                </View>
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
                   <TouchableOpacity
                     style={{

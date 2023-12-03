@@ -73,7 +73,7 @@ const BottomNav = ({ setSelectedScreen }) => {
             color="white"
             style={{ alignSelf: 'center' }}
           />
-          <Text style={{ color: 'white', fontWeight: 'bold'  }}>Financial</Text>
+          <Text style={{ color: 'white', fontWeight: 'bold'  }}>Finances</Text>
         </Pressable>
           
         <AddButton />

@@ -12,7 +12,7 @@ import BottomNav from "../components/BottomNav";
 import TopNavWeb from "../components/TopNavWeb";
 import Logo from "../assets/logo.png";
 import TopNavMobile from "../components/TopNavMobile";
-import MissionsScreen from "../components/MissionsScreen";
+import MissionsScreen from "../screens/MissionsScreen";
 
 const HomeScreen = () => {
   const navigation = useNavigation();

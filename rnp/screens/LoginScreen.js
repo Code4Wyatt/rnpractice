@@ -21,7 +21,7 @@ const LoginScreen = () => {
   const [userInfo, setUserInfo] = useState(null);
 
   const [request, response, promptAsync] = Google.useAuthRequest({
-    androidClientId: '724374681651-iejpnnd5b47mqcf9ldu07pkq9l2l963k.apps.googleusercontent.com',
+    androidClientId: '724374681651-k5g9sq5etlk9tqd8snsj16daf7e2lfsv.apps.googleusercontent.com',
     iosClientId: '724374681651-9c6mdrjbeu6lettqfrl92544ood2rf9k.apps.googleusercontent.com',
     webClientId: '724374681651-k5g9sq5etlk9tqd8snsj16daf7e2lfsv.apps.googleusercontent.com',
     expoClientId: '724374681651-968te3m9hjqt0mascadb4jnrbqrd46ls.apps.googleusercontent.com',
@@ -53,7 +53,7 @@ const LoginScreen = () => {
         headers: { Authorization: `Bearer ${token}` },
       });
       const user = await response.json();
-      console.log('suuaud', user)
+      console.log('user', user)
       await AsyncStorage.setItem("@user", JSON.stringify(user));
       setUserInfo(user);
     } catch (error) {

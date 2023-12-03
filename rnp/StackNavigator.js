@@ -6,7 +6,7 @@ import LoginScreen from './screens/LoginScreen';
 import useAuth from './hooks/useAuth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
-import MissionsScreen from './components/MissionsScreen';
+import MissionsScreen from './screens/MissionsScreen';
 // import HabitScreen from './screens/HabitScreen';
 // import CoachingScreen from './screens/CoachingScreen';
 // import FinancialScreen from './screens/FinancialScreen';
